@@ -10,17 +10,35 @@ html
         block title
             title Page Title
         meta(name='viewport' content='width=device-width')
-        link(rel='stylesheet' type='text/css' href='/css/main.css' media='screen, projection, print')
+        link(rel='stylesheet' type='text/css' href='css/main.css' media='screen, projection, print')
     body
         <!--[if lt IE 7]>
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
         .wrapper
             .container
-
+                .box
+                    .box_text
+                        .box_text-18
+                        .box_text-xvideo
+                            p.box_text-xvideo-text xvideo
+                            .box_text-xvideo-logo Tube
+                    .box_player
+                        .box_player-wrapper
+                            a(href="#").box_player-wrapper-ok#check2 Смотреть
+                            .box_player-wrapper-text Просмотров 14204
+                            a(href="#").box_player-wrapper-cen
+                                .box_player-wrapper-cen-black
+                                .box_player-wrapper-cen-black2 Отмена
+                    .box_checkbox
+                        input(type="checkbox" name="check" value="check1")#check1
+                        label(for="check1" class="chack3")
+                        .box_checkbox-text Мне испольнилось 18 лет и я согласен с <a class="box_a" href="#">правилами предоставления услуг</a>
+                    .box_downcheckbox-text Услуга Domainname.eu. Провайдер ООО "Эс Эм Экс Комьюникейшнс". Стоимость 20 рублей с НДС
         script.
-            window.jQuery || document.write('<script src="/js/_vendor/jquery-1.11.0.min.js"><\/script>');
+            window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>');
         script(src = "js/jquery.min.js")
+        script(src = "js/main.js")
 
 
 
